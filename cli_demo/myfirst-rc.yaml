@@ -15,10 +15,8 @@ spec:
   template:
     metadata:
       labels:
-        phase: prod
-        role: frontend
-        name: myfirstpod
-      name: myfirstpod
+        name: myfirstrcpod
+      name: myfirstrcpod
     spec:
       containers:
       - name: filepuller
