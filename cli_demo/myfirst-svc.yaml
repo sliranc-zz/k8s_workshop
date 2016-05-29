@@ -15,4 +15,4 @@ spec:
   # traffic to.
   selector:
     name: myfirstpod
-  type: NodePort
+  type: LoadBalancer
