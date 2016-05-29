@@ -24,11 +24,11 @@ spec:
       - name: filepuller
         image: sliranc/filepuller:latest
         volumeMounts:
-      - mountPath: /static
-        name: static-vol
+        - mountPath: /static
+          name: static-vol
       - name: webserver
         image: nginx:latest
-      ports:
+        ports:
         - containerPort: 80
         volumeMounts:
           - mountPath: /var/www/html/static
