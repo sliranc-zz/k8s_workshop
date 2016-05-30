@@ -20,17 +20,4 @@ spec:
     spec:
       containers:
       - name: filepuller
-        image: sliranc/filepuller:latest
-        volumeMounts:
-        - mountPath: /usr/share/nginx/html
-          name: static-vol
-      - name: webserver
-        image: nginx:latest
-        ports:
-        - containerPort: 80
-        volumeMounts:
-          - mountPath: /usr/share/nginx/html
-            name: static-vol
-      volumes:
-      - name: static-vol
-        emptyDir: {}
+        image: sliranc/rcweb:latest
