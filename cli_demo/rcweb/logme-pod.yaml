@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    phase: prod
+  name: logme
+spec:
+  containers:
+  - name: filepuller
+    image: sliranc/logme:latest
