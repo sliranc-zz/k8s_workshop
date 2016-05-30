@@ -1,7 +1,6 @@
 #! /bin/bash
 while true; do 
-echo "$(date) running inside a docker container"
-echo "ConfigMap DATACENTER ${DATACENTER}"
+echo "$(date) running inside a docker container ${HOSTNAME}"
 sleep 1
 
 done
