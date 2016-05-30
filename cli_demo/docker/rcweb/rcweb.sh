@@ -1,3 +1,3 @@
 #! /bin/bash
-echo $HOSTNAME >> /usr/share/nginx/html/index.html
+echo "<p> Pod Name $HOSTNAME</p>"  >> /usr/share/nginx/html/index.html
 nginx -g "daemon off;"
