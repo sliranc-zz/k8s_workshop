@@ -13,5 +13,6 @@ spec:
   # but this time it identifies the set of pods to load balance
   # traffic to.
   selector:
-    name: rcwebpod
+    app: rcweb
+    phase: production
   type: LoadBalancer

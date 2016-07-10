@@ -5,19 +5,22 @@ metadata:
   labels: 
     name: rcweb
 spec:
-  replicas: 2
+  replicas: 4
   # selector identifies the set of pods that this
   # replication controller is responsible for managing
   selector:
-    name: rcwebpod
+    app: rcweb
+    phase: production
   # template defines the 'cookie cutter' used for creating
   # new pods when necessary
   template:
     metadata:
       labels:
-        name: rcwebpod
+        app: rcweb
+        role: frontend
+        phase: production
       name: rcwebpod
     spec:
       containers:
-      - name: filepuller
+      - name: staticweb
         image: sliranc/rcweb:latest
