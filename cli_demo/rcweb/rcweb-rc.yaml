@@ -5,7 +5,7 @@ metadata:
   labels: 
     name: rcweb
 spec:
-  replicas: 2
+  replicas: 4
   # selector identifies the set of pods that this
   # replication controller is responsible for managing
   selector:
